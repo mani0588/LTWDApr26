@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;javaPack.StringFinctions&apos; to &apos;StringFunctions&apos;&#x0D;&#x0A;- Original project: &apos;javaProject&apos;&#x0D;&#x0A;- Original element: &apos;javaPack.StringFinctions&apos;&#x0D;&#x0A;- Renamed element: &apos;javaPack.StringFunctions&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;StringFinctions&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;javaPack{StringFinctions.java[StringFinctions" matchStrategy="1" name="StringFunctions" qualified="false" references="true" similarDeclarations="false" stamp="1651196427216" textual="false" version="1.0"/>
+</session>

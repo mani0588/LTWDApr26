@@ -1,0 +1,23 @@
+package objectRepository;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class BusSearchPage {
+	
+	@FindBy(xpath = "//input[@id='source']") 
+	WebElement txtFromCity;
+	
+	
+	driver.findElement(By.xpath("//input[@id='source']")).sendKeys(fromCity);
+	driver.findElement(By.xpath("//li[text()='" + fromCity + "']")).click();
+
+	driver.findElement(By.xpath("//input[@id='destination']")).sendKeys(toCity);
+	driver.findElement(By.xpath("//li[text()='" + toCity + "']")).click();
+
+	driver.findElement(By.xpath("//input[@id='datepicker1']")).click();
+	driver.findElement(By.xpath("//td[contains(@class,'ui-datepicker-today')]/a")).click();
+	driver.findElement(By.xpath("//a[text()='Search']")).click();
+
+
+}
