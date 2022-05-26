@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Abhibus QA Automation">
-	<test name="Regression Test">
+	<test name="Regression Test with chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="seleniumPack.AbhibusTest" />
+			<class name="seleniumPack.TestAnnotations" />
+		</classes>
+	</test>
+
+	<test name="Regression Test with firefox">
+		<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="seleniumPack.AbhibusTest" />
 			<class name="seleniumPack.TestAnnotations" />

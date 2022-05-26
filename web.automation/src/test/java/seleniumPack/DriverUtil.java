@@ -10,6 +10,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.Select;
 
@@ -20,6 +21,25 @@ public class DriverUtil {
 	public static WebDriver driver;
 	public static JavascriptExecutor js;
 	public static String homePath = System.getProperty("user.dir");
+
+	public WebDriver getDriverWithName(String browser) {
+		if (browser.equalsIgnoreCase("chrome")) {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+		}
+		else if (browser.equalsIgnoreCase("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+		} else {
+			throw new IllegalArgumentException("Invalid browser name, please use chrome or firefox only");
+		}
+		js = ((JavascriptExecutor) driver);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+		driver.get("https://www.abhibus.com/");
+		return driver;
+	}
 
 	public WebDriver getDriver() {
 		WebDriverManager.chromedriver().setup();
@@ -86,10 +106,9 @@ public class DriverUtil {
 	public void closeBrowser() {
 		driver.close();
 	}
-	
+
 	public void executeJS(WebElement target, String jsScript) {
 		js.executeScript(jsScript, target);
 	}
-	
 
 }
