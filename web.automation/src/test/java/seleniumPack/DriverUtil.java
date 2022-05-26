@@ -17,8 +17,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverUtil {
 
-	public WebDriver driver;
-	public JavascriptExecutor js;
+	public static WebDriver driver;
+	public static JavascriptExecutor js;
 	public static String homePath = System.getProperty("user.dir");
 
 	public WebDriver getDriver() {

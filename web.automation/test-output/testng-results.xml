@@ -2,16 +2,16 @@
 <testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-18T01:47:31Z" name="Default suite" finished-at="2022-05-18T01:47:51Z" duration-ms="20167">
+  <suite started-at="2022-05-26T01:03:28Z" name="Default suite" finished-at="2022-05-26T01:03:46Z" duration-ms="18013">
     <groups>
     </groups>
-    <test started-at="2022-05-18T01:47:31Z" name="Default test" finished-at="2022-05-18T01:47:51Z" duration-ms="20167">
+    <test started-at="2022-05-26T01:03:28Z" name="Default test" finished-at="2022-05-26T01:03:46Z" duration-ms="18013">
       <class name="seleniumPack.AbhibusTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:seleniumPack.AbhibusTest@2118cddf]" started-at="2022-05-18T01:47:31Z" name="beforeMethod" finished-at="2022-05-18T01:47:43Z" duration-ms="12232" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:seleniumPack.AbhibusTest@76ed1b7c]" started-at="2022-05-26T01:03:28Z" name="beforeMethod" finished-at="2022-05-26T01:03:38Z" duration-ms="10450" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyBusSearchFunctionWorkingForPastDate()[pri:0, instance:seleniumPack.AbhibusTest@2118cddf]" started-at="2022-05-18T01:47:43Z" name="verifyBusSearchFunctionWorkingForPastDate" finished-at="2022-05-18T01:47:49Z" duration-ms="5651" status="FAIL">
+        <test-method signature="verifyBusSearchFunctionWorkingForPastDate()[pri:0, instance:seleniumPack.AbhibusTest@76ed1b7c]" started-at="2022-05-26T01:03:38Z" name="verifyBusSearchFunctionWorkingForPastDate" finished-at="2022-05-26T01:03:43Z" duration-ms="5400" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[[Title is not matching with some conditions] 
@@ -60,7 +60,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBusSearchFunctionWorkingForPastDate -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:seleniumPack.AbhibusTest@2118cddf]" started-at="2022-05-18T01:47:49Z" name="afterMethod" finished-at="2022-05-18T01:47:51Z" duration-ms="2225" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:seleniumPack.AbhibusTest@76ed1b7c]" started-at="2022-05-26T01:03:43Z" name="afterMethod" finished-at="2022-05-26T01:03:46Z" duration-ms="2119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

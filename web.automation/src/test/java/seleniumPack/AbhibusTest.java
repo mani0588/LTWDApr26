@@ -1,6 +1,8 @@
 package seleniumPack;
 
 import static org.assertj.core.api.Assertions.assertThat;
+
+import org.apache.log4j.PropertyConfigurator;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -12,10 +14,9 @@ public class AbhibusTest extends DriverUtil {
 
 	BusSearchPage busSearchPage;
 
-	// logs
 	// excel
-	// waits
-	// mouse
+	// xml and screenshots list
+	// browser compatability
 
 	@DataProvider // Egar
 	public String[][] getTravelDetails() {
@@ -51,6 +52,9 @@ public class AbhibusTest extends DriverUtil {
 
 	@BeforeMethod
 	public void beforeMethod() {
+		
+		PropertyConfigurator.configure("./log4j.properties");
+		
 		getDriver("https://www.abhibus.com/");
 		busSearchPage = new BusSearchPage(driver);
 	}

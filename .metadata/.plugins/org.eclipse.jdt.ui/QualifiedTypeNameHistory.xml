@@ -11,9 +11,7 @@
     <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.OutputType"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.io.FileHandler"/>
@@ -23,10 +21,19 @@
     <fullyQualifiedTypeName name="org.assertj.core.api.Assert"/>
     <fullyQualifiedTypeName name="org.assertj.core.api.Assertions"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
-    <fullyQualifiedTypeName name="objectRepository.BusSearchPage"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactoryFinder"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
-    <fullyQualifiedTypeName name="seleniumPack.DriverUtil"/>
     <fullyQualifiedTypeName name="java.util.Base64"/>
     <fullyQualifiedTypeName name="org.apache.commons.codec.binary.Base64"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.DataProvider"/>
+    <fullyQualifiedTypeName name="seleniumPack.SelectLastValueFromAllDD"/>
+    <fullyQualifiedTypeName name="objectRepository.BusSearchPage"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.JavascriptExecutor"/>
+    <fullyQualifiedTypeName name="seleniumPack.DriverUtil"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
+    <fullyQualifiedTypeName name="seleniumPack.MouseActions"/>
+    <fullyQualifiedTypeName name="java.time.Duration"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 </qualifiedTypeNameHistroy>
