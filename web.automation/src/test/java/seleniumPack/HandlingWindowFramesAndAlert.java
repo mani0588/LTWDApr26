@@ -15,12 +15,12 @@ public class HandlingWindowFramesAndAlert extends DriverUtil {
 
 		driver.findElement(By.linkText("Try it Yourself »")).click();
 
-		obj.takeScreenshot("HomePage");
+		//obj.takeScreenshot("HomePage");
 
 		Set<String> allWindIDs = driver.getWindowHandles();
 		driver.switchTo().window(allWindIDs.toArray()[1].toString());
 
-		obj.takeScreenshot("AlertPage");
+//		obj.takeScreenshot("AlertPage");
 
 		driver.switchTo().frame("iframeResult");
 		driver.findElement(By.xpath("//button[text()='Try it']")).click();

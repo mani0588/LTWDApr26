@@ -19,8 +19,6 @@ public class AbhibusTest extends DriverUtil {
 
 	BusSearchPage busSearchPage;
 
-	// xml and screenshots list
-
 	@DataProvider // Egar
 	public String[][] getTravelDetails() {
 		String[][] data = { { "Chennai", "Bangalore" }, { "Bangalore", "Chennai" }, { "Hyderabad", "Bangalore" } };

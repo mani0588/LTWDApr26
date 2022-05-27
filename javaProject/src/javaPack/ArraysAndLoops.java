@@ -23,6 +23,11 @@ public class ArraysAndLoops {
 		for (int num : nums) {
 			System.out.println(num);
 		}
+		
+		
+		int[] nums1 = new int[3];
+		System.out.println(Arrays.toString(nums1));
+		nums1[0] = 10;
 
 	}
 

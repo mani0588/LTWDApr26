@@ -21,13 +21,14 @@ public class DriverUtil {
 	public static WebDriver driver;
 	public static JavascriptExecutor js;
 	public static String homePath = System.getProperty("user.dir");
+	public static String browserName;
 
 	public WebDriver getDriverWithName(String browser) {
+		browserName = browser;
 		if (browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-		}
-		else if (browser.equalsIgnoreCase("firefox")) {
+		} else if (browser.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		} else {
@@ -64,9 +65,13 @@ public class DriverUtil {
 	}
 
 	// takeScreenshot with specific name
-	public void takeScreenshot(String fileName) throws IOException {
+	public void takeScreenshot(String fileName) {
 		File screens = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileHandler.copy(screens, new File(homePath + fileName + ".png"));
+		try {
+			FileHandler.copy(screens, new File(homePath +"\\" + fileName + ".png"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void selectCheckbox(WebElement element) {
